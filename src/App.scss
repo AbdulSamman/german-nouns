@@ -1,0 +1,70 @@
+body {
+  background-color: #333;
+  padding: 0 1rem;
+  font-family: sans-serif;
+  color: #fff;
+  h1 {
+    color: rgb(211, 211, 110);
+  }
+  .info {
+    .learned {
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: rgb(146, 75, 75);
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      font-weight: bold;
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+  .germanNouns {
+    .germanNoun {
+      background-color: green;
+      width: 12rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      word-break: break-all;
+      border-radius: 10px;
+      .front {
+        color: rgb(230, 215, 215);
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+      .back {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 0.5rem;
+        background-color: rgb(16, 61, 16);
+        padding: 0.3rem;
+        border-radius: 10px;
+        .singular {
+          color: yellow;
+        }
+        .plural {
+          color: rgb(112, 112, 26);
+          font-style: italic;
+        }
+        button {
+          padding: 0 5px;
+          border-radius: 5px;
+          font-weight: bold;
+          background-color: rgb(146, 121, 75);
+          &:hover {
+            background-color: orange;
+          }
+        }
+      }
+    }
+  }
+}
